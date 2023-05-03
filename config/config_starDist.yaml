@@ -1,0 +1,6 @@
+block: ["block_1", "block_2", "block_3", "block_4", "block_5"] #not case sensitive in dir searching on macOS, but sensitive on Linux 
+marker: ["CD8"] #["CKPAN", "CD3_second", "Ki67", "p53", "CD3", "CD20", "CD8", "CD4", "FOXP3", "CD68", "PDL1_SP142", "H2AXp"] #["one_core"]
+excluded: "excluded_all130423.txt"
+segment:
+  cells: "segmentcell_all130423.txt"
+  meta: "segmentmeta_all130423.txt" 

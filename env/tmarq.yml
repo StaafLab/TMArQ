@@ -1,4 +1,4 @@
-name: imgSTAR
+name: tmarq
 channels:
   - nvidia
   - conda-forge
@@ -266,4 +266,3 @@ dependencies:
     - tqdm==4.64.0
     - typing-extensions==3.7.4.3
     - werkzeug==2.1.1
-prefix: /home/Illumina/miniconda3/envs/imgSTAR

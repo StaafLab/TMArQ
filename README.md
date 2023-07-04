@@ -10,16 +10,16 @@ To use TMArQ you will first need to install conda, see https://docs.conda.io/pro
 
 To run the code in this repository, the easiest is to clone it and then install the requirements
 
-`git clone https://github.com/StaafLab/TMArQ
-cd TMArQ
-conda env create -f tmarq.yml`
+`  git clone https://github.com/StaafLab/TMArQ
+  cd TMArQ
+  conda env create -f tmarq.yml`
 
 ## Usage
 
 To run this pipeline, activate the conda environment and run snakemake
 
-`conda activate tmarq
-snakemake -jall`
+`  conda activate tmarq
+  snakemake -jall`
 
 ## License
 

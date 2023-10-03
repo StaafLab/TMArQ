@@ -1,4 +1,4 @@
-# Tissue Mircoarray mArker Quantification (TMArQ)
+# Tissue mircoarray MArker Quantification (TMArQ)
 
 ## About
 

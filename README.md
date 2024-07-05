@@ -3,6 +3,15 @@
 ## About
 
 This is a pipeline for quantification of antibody staining in TMA cores.
+TMArQ works as follows:
+
+1) Detection of region of interest (ROI) using Hough circle detection.
+2) Colour deconvolution to separate out the DAB staining from the hematoxylin staining.
+3) Thresholding signal in the DAB layer to determine DAB absence/presence on the level of individual pixels.
+4) Cell nuclei segmentation using starDist.
+5) Combining starDist detected cells with the DAB staining layer to count IHC-stained cells in the core. 
+
+<img loading="lazy" width="30px" src="./figures/TMArQ.png" alt="TMArQ_pipeline png" />
 
 ## Installation
 

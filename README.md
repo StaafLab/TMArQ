@@ -13,6 +13,8 @@ TMArQ works as follows:
 
 <img width="300px" src="./figures/TMArQ.png" alt="TMArQ_pipeline png" />
 
+![TMArQ pipelin](https://raw.githubusercontent.com/StaafLab/TMArQ/master/.github/figures/TMArQ.png)
+
 ## Installation
 
 To use TMArQ you will first need to install conda, see https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html

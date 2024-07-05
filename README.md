@@ -11,7 +11,7 @@ TMArQ works as follows:
 4) Cell nuclei segmentation using starDist.
 5) Combining starDist detected cells with the DAB staining layer to count IHC-stained cells in the core. 
 
-![TMArQ pipeline](https://raw.githubusercontent.com/sroostee/TMArQ/master/.github/figures/TMArQ.png)
+![TMArQ pipeline](https://raw.githubusercontent.com/StaafLab/TMArQ/blob/main/.github/figures/TMArQ.png)
 
 ## Installation
 

@@ -21,7 +21,7 @@ rule detectROI:
 		coordinates = "results/01_coordinates/{block}/{marker}.txt",
 		meta = "meta/02_segment/{block}/{marker}/" + config['excluded']
 	shell:
-		"scripts/01_detectROI.py -i {input} -o {output.coordinates} -e {output.meta}"
+		"bin/01_detectROI.py -i {input} -o {output.coordinates} -e {output.meta}"
 
 rule segment:
 	input:
@@ -31,4 +31,4 @@ rule segment:
 		counts = "results/02_segment/{block}/{marker}/" + config['segment']['cells'],
 		meta = "meta/02_segment/{block}/{marker}/" + config['segment']['meta'] 
 	shell:
-		"scripts/02_deconvolve.py -i {input.tma} -c {input.coordinates} -out {output.counts} -m {output.meta}" 
+		"bin/02_deconvolve.py -i {input.tma} -c {input.coordinates} -out {output.counts} -m {output.meta}" 

@@ -43,7 +43,7 @@ snakemake -jall
 TMArQ expects individual core data under:
 - data
   - blockname 
-   - markername
+    - markername
  
  Specify your block and marker names in the config file. 
  Specify your config file in the Snakemake file. 

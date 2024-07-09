@@ -1,6 +1,6 @@
 #input filenames should not contain white spaces
 
-configfile: "config/config_starDist.yaml"
+configfile: "config/config_example.yaml"
 
 import json
 

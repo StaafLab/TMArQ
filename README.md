@@ -1,8 +1,8 @@
-# Tissue mircoarray MArker Quantification (TMArQ)
+# TMArQ
 
 ## About
 
-This is a pipeline for quantification of antibody staining in TMA cores.
+TMArQ, Tissue mircoarray MArker Quantification is a pipeline for automated quantification of antibody staining in TMA cores.
 TMArQ works as follows:
 
 1) Detection of region of interest (ROI) using Hough circle detection.
@@ -12,6 +12,10 @@ TMArQ works as follows:
 5) Combining starDist detected cells with the DAB staining layer to count IHC-stained cells in the core. 
 
  <img src='./tmarq_git.png' alt='TMArQ pipeline' width=60%>
+
+## Table of Contents
+
+
 
 ## Installation
 
@@ -25,8 +29,9 @@ cd TMArQ
 conda env create -f tmarq.yml
 ```
 
-## Usage
+## Getting started
 
+TMArQ comes with an exmaple data set
 To run this pipeline, activate the conda environment and run snakemake
 
 ```

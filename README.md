@@ -31,13 +31,33 @@ conda env create -f tmarq.yml
 
 ## Getting started
 
-TMArQ comes with an exmaple data set
-To run this pipeline, activate the conda environment and run snakemake
+TMArQ comes with an exmaple data set. To run this example, activate the conda environment and run the workflow with snakemake. 
 
 ```
 conda activate tmarq
 snakemake -jall
 ```
+
+## Specifying your own files
+
+TMArQ expects individual core data under:
+- data
+  - blockname 
+   - markername
+ 
+ Specify your block and marker names in the config file. 
+ Specify your config file in the Snakemake file. 
+
+ Then run your code as in the example above. You can specify the number of cores you want to use for the run using the -j flag. In the example we use all available cores. 
+
+```
+conda activate tmarq
+snakemake -jall
+```
+
+ The run will create a results directory with two intermediate outputs: 
+ - core coordinates
+ - total cell counts per core
 
 ## License
 

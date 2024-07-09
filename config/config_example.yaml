@@ -1,5 +1,5 @@
-block: ["block_1", "block_2", "block_3", "block_4", "block_5"] 
-marker: ["CD8", "CD3"]
+block: ["git_example"] 
+marker: ["CD20", "CD3", "p53"]
 excluded: "excluded.txt"
 segment:
   cells: "segmentcell.txt"

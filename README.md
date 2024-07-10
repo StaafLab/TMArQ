@@ -13,10 +13,6 @@ TMArQ works as follows:
 
  <img src='./tmarq_git.png' alt='TMArQ pipeline' width=60%>
 
-## Table of Contents
-
-
-
 ## Installation
 
 To use TMArQ you will first need to install conda, see https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html

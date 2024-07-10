@@ -131,7 +131,7 @@ files = list_files(input_dir)
 coordinate_dict = create_coord_dict(coordinates)
 
 with open(output, "a") as out:
-	out.write('file \t hema_cells \t dab_cells10 \t dab_frac10 \n')
+	out.write('file \t hema_cells \t dab_cells \t dab_frac \n')
 
 # with open(output, "a") as out:
 # 	out.write('file \t hema_cells \t dab_cells\n')

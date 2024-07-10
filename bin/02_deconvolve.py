@@ -131,7 +131,7 @@ files = list_files(input_dir)
 coordinate_dict = create_coord_dict(coordinates)
 
 with open(output, "a") as out:
-	out.write('file \t hema_cells \t dab_cells10 \t dab_frac10 \t dab_cells20 \t dab_frac20 \t dab_cells30 \t dab_frac30 \t dab_cells40 \t dab_frac40 \t dab_cells50 \t dab_frac50 \n')
+	out.write('file \t hema_cells \t dab_cells10 \t dab_frac10 \n')
 
 # with open(output, "a") as out:
 # 	out.write('file \t hema_cells \t dab_cells\n')
@@ -234,20 +234,12 @@ for f in files:
 	xids = cell_infodf['xid'].tolist()
 	yids = cell_infodf['yid'].tolist()
 	marker_10 = []
-	marker_20 = []
-	marker_30 = []
-	marker_40 = []
-	marker_50 = []
 
 	dab_positive = np.copy(hema_labels)
 
 	for cell, xid, yid in zip(cells, xids, yids):
 
 		dab_pos_10 = False
-		dab_pos_20 = False
-		dab_pos_30 = False
-		dab_pos_40 = False
-		dab_pos_50 = False
 			
 		cell_dab_grid = mask[(yid-n):(yid+n), (xid-n):(xid+n)]
 		n_pix = cell_dab_grid.size
@@ -256,14 +248,6 @@ for f in files:
 			pix_frac = dab_pos_pix/n_pix
 			if pix_frac > .1:
 				dab_pos_10 = True
-			if pix_frac > .2:
-				dab_pos_20 = True
-			if pix_frac > .3:
-				dab_pos_30 = True
-			if pix_frac > .4:
-				dab_pos_40 = True
-			if pix_frac > .5:
-				dab_pos_50 = True
 				
 			else:
 				dab_positive[dab_positive == cell] = 0
@@ -272,28 +256,16 @@ for f in files:
 			dab_positive[dab_positive == cell] = 0
 				
 		marker_10.append(dab_pos_10)
-		marker_20.append(dab_pos_20)
-		marker_30.append(dab_pos_30)
-		marker_40.append(dab_pos_40)
-		marker_50.append(dab_pos_50)
 	
 	dab_positive10 = np.sum(marker_10)
-	dab_positive20 = np.sum(marker_20)
-	dab_positive30 = np.sum(marker_30)
-	dab_positive40 = np.sum(marker_40)
-	dab_positive50 = np.sum(marker_50)
 
 	# np.save("results/dab_positive/" + f + "_mask.npy", dab_positive)
 	
 	if len(cell_counts) > 0: 
 		dab_frac10 = np.divide(dab_positive10, len(cell_counts))
-		dab_frac20 = np.divide(dab_positive20, len(cell_counts))
-		dab_frac30 = np.divide(dab_positive30, len(cell_counts))
-		dab_frac40 = np.divide(dab_positive40, len(cell_counts))
-		dab_frac50 = np.divide(dab_positive50, len(cell_counts))
 
 	with open(output, "a") as out:
-		out.write(f' {f} \t {len(cell_counts)} \t {dab_positive10} \t {dab_frac10} \t {dab_positive20} \t {dab_frac20} \t {dab_positive30} \t {dab_frac30} \t {dab_positive40} \t {dab_frac40}\t {dab_positive50} \t {dab_frac50}\n')
+		out.write(f' {f} \t {len(cell_counts)} \t {dab_positive10} \t {dab_frac10}\n')
 
 
 

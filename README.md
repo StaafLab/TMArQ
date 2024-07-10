@@ -40,15 +40,15 @@ snakemake -jall
 
 ## Specifying your own files
 
-TMArQ expects individual core data under:
+TMArQ expects individual core images under:
 - data
   - blockname 
     - markername
  
- Specify your block and marker names in the config file. 
- Specify your config file in the Snakemake file. 
+ Specify your block and marker names in the config file, which is located in the directory config. 
+ Specify the name of your config file in the Snakemake file. 
 
- Then run your code as in the example above. You can specify the number of cores you want to use for the run using the -j flag. In the example we use all available cores. 
+ Then run your code as in the example above. You can specify the number of cpu cores you want to use for the run using the -j flag. In the example we use all available cores. 
 
 ```
 conda activate tmarq

@@ -1,0 +1,2 @@
+file     hema_cells      dab_cells     dab_frac
+ CD20.png        7336    616     0.08396946564885496

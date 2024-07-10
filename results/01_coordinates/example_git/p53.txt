@@ -1,0 +1,2 @@
+#file   center_y        center_x        radius
+p53.png 1660    1750    1450

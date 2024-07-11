@@ -2,7 +2,8 @@
 
 ## About
 
-TMArQ, Tissue mircoarray MArker Quantification is a pipeline for automated quantification of antibody staining in TMA cores.
+TMArQ, Tissue microarray MArker Quantification is a pipeline for automated quantification of antibody staining in TMA cores.
+It can automatically process TMA core images of several markers taken from several TMA blocks. The user only needs to provide the name of the TMA block and marker directories.
 TMArQ works as follows:
 
 1) Detection of region of interest (ROI) using Hough circle detection.

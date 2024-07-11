@@ -1,2 +1,2 @@
-file     hema_cells      dab_cells     dab_frac
+file     total_cells      pos_cells     pos_frac
  p53.png         7380    4101    0.5556910569105691

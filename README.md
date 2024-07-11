@@ -42,8 +42,8 @@ TMArQ expects individual core images under:
   - blockname 
     - markername
  
- Specify your block and marker names in the config file, which is located in the directory config (see config_example.yml for an example).
- Specify the name of your config file in the Snakemake file. 
+ 1. Specify your block and marker names in the config file, which is located in the directory config (see config_example.yml for an example).
+ 2. Specify the name of your config file in the Snakemake file (Snakefile). 
 
  TMArQ expects core images that are a bit over 3000x3000 pixels, as this is the standard dearrayed output from pathXL, a platform enabling digital pathology. If you want to update the image dimensions, you can easily do this in the tmaConfig.yml file under config.
 

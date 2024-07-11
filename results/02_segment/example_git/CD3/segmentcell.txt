@@ -1,2 +1,2 @@
-file     hema_cells      dab_cells     dab_frac
+file     total_cells      pos_cells     pos_frac
  CD3.png         7195    1603    0.22279360667129952

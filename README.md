@@ -14,6 +14,8 @@ TMArQ works as follows:
 
  <img src='./tmarq_git.png' alt='TMArQ pipeline' width=60%>
 
+For more information, see our 2024 publication ["Tumour immune characterisation of primary triple-negative breast cancer using automated image quantification of immunohistochemistry-stained immune cells"](https://www.nature.com/articles/s41598-024-72306-1) on Scientific Reports.
+
 ## Installation
 
 To use TMArQ you will first need to install conda, see https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html

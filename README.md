@@ -23,7 +23,7 @@ To run the code in this repository, the easiest is to clone it and then install 
 ```
 git clone https://github.com/StaafLab/TMArQ
 cd TMArQ
-conda env create -f tmarq.yml
+conda env create -f env/tmarq.yml
 ```
 
 ## Getting started

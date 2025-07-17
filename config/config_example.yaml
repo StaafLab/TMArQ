@@ -1,4 +1,4 @@
-block: ["git_example"] 
+block: ["example_git"] 
 marker: ["CD20", "CD3", "p53"]
 excluded: "excluded.txt"
 segment:

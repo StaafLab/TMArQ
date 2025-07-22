@@ -30,7 +30,7 @@ conda env create -f env/tmarq.yml
 
 ## Getting started
 
-TMArQ comes with an exmaple data set. To run this example, activate the conda environment and run the workflow with snakemake. 
+TMArQ comes with an example data set. To run this example, activate the conda environment and run the workflow with snakemake. 
 
 ```
 conda activate tmarq

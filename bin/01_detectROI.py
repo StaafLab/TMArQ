@@ -104,7 +104,7 @@ set_headers(file = empty_cores, headers = meta_headers)
 for f in files:
 	print(f)
 	img_full = imread(input_dir+"/"+f)
-	img_rescaled = rescale(img_full, (1/scaling_factor), multichannel=True, anti_aliasing = True)
+	img_rescaled = rescale(img_full, (1/scaling_factor), channel_axis=-1, anti_aliasing = True)
 
 	#####################	CIRCLE DETECTION	################
 

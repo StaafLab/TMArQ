@@ -102,6 +102,13 @@ parser.add_argument(
 	required = True
 	)
 
+parser.add_argument(
+	"--save-per-cell",
+	action = 'store_true',
+	help = "Also save information per cell per core",
+	required = False
+	)
+
 args = parser.parse_args()
 
 input_dir = args.input_directory
@@ -260,7 +267,20 @@ for f in files:
 	dab_positive10 = np.sum(marker_10)
 
 	# np.save("results/dab_positive/" + f + "_mask.npy", dab_positive)
-	
+
+	# save coordinates of positive cells
+	if args.save_per_cell:
+		df_per_cell = pd.DataFrame({'cell': cells,
+		'x_coord': xids,
+		'y_coord': yids,
+		'is_dab_pos': marker_10
+		})
+		df_positive = df_per_cell[df_per_cell['is_dab_pos'] == True]
+		df_positive = df_positive.drop(columns=['is_dab_pos'])
+
+		Path("results/02_segment/pos_cells").mkdir(parents=True, exist_ok=True)
+		df_positive.to_csv("results/02_segment/pos_cells/" + f + "_dab_pos.txt", sep='\t', index=False)
+
 	if len(cell_counts) > 0: 
 		dab_frac10 = np.divide(dab_positive10, len(cell_counts))
 

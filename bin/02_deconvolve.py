@@ -278,8 +278,14 @@ for f in files:
 		df_positive = df_per_cell[df_per_cell['is_dab_pos'] == True]
 		df_positive = df_positive.drop(columns=['is_dab_pos'])
 
-		Path("results/02_segment/pos_cells").mkdir(parents=True, exist_ok=True)
-		df_positive.to_csv("results/02_segment/pos_cells/" + f + "_dab_pos.txt", sep='\t', index=False)
+		output_path = Path(args.out)
+		block_info = output_path.parents[1].name
+		marker_info = output_path.parents[0].name
+
+		pos_cells_dir = Path(f"results/02_segment/pos_cells/{block_info}/{marker_info}")
+		pos_cells_dir.mkdir(parents=True, exist_ok=True)
+
+		df_positive.to_csv(pos_cells_dir / f"{f}_dab_pos.txt", sep='\t', index=False)
 
 	if len(cell_counts) > 0: 
 		dab_frac10 = np.divide(dab_positive10, len(cell_counts))

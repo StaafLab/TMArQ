@@ -2,5 +2,6 @@ block: ["example_git"]
 marker: ["CD20", "CD3", "p53"]
 excluded: "excluded.txt"
 segment:
-  cells: "segmentcell.txt"
-  meta: "segmentmeta.txt" 
+  cells: "segment_cell.txt"
+  meta: "segment_meta.txt" 
+save_per_cell: false

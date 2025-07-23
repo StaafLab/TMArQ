@@ -1,2 +1,2 @@
 #file   center_y        center_x        radius
-CD20.png        1480    1870    1300
+CD20.png        1670    1710    1450

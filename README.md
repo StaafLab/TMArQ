@@ -69,10 +69,11 @@ snakemake -jall
 
 ## Using a Singularity container
 
-To use TMArQ with a container, Singularity must be installed. Follow the information available on https://docs.sylabs.io/guides/3.8/admin-guide/installation.html or, alternatively, create (and activate) a conda environment that contains Singularity. Then, build the container using the provided .def file (only needs to be performed once to create the .sif file), and run TMArQ as shown below for as many blocks and markers as needed.
+To use TMArQ with a container, Singularity must be installed. Follow the information available on https://docs.sylabs.io/guides/3.8/admin-guide/installation.html or, alternatively, create (and activate) a conda environment that contains Singularity. After cloning this repo, go into the TMArQ/ directory, build the container using the provided .def file (only needs to be performed once to create the .sif file), and run TMArQ as shown below for as many blocks and markers as needed.
 
 ```
-# this code can be used when in the TMArQ/ directory
+git clone https://github.com/StaafLab/TMArQ
+cd TMArQ
 singularity build --fakeroot tmarq.sif singularity/tmarq_singularity.def
 # to run the example data
 singularity exec --bind /path/to/TMArQ:/workspace tmarq.sif \

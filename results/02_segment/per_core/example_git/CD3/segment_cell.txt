@@ -1,0 +1,2 @@
+file 	 total_cells 	 pos_cells 	 pos_frac 
+ CD3.png 	 7195 	 1654 	 0.22988186240444752

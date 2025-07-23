@@ -1,0 +1,2 @@
+file 	 total_cells 	 pos_cells 	 pos_frac 
+ CD20.png 	 7617 	 665 	 0.08730471314165682

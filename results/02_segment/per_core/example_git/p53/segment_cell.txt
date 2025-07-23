@@ -1,0 +1,2 @@
+file 	 total_cells 	 pos_cells 	 pos_frac 
+ p53.png 	 7380 	 4146 	 0.5617886178861788
